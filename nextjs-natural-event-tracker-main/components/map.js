@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import icon from "@/components/icon";
+import L from "leaflet";
+
+// Fix marker icon (client-side only)
+const icon = L.icon({
+  iconSize: [32, 40],
+  iconAnchor: [10, 41],
+  popupAnchor: [2, -40],
+  iconUrl: "./events.svg",
+});
 
 export default function Map({ events }) {
   const position = [51.505, -0.09];
+  const [isClient, setIsClient] = useState(false);
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
+  
   return (
     <MapContainer
       center={position}

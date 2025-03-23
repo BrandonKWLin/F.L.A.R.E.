@@ -1,7 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Map from "@/components/map";
+import dynamic from 'next/dynamic';
+
+// Dynamically import Map with SSR disabled
+const Map = dynamic(
+  () => import('@/components/map'),
+  { 
+    ssr: false,
+    loading: () => <p>Loading map...</p>
+  }
+);
 
 export default function Home() {
   const [events, setEvents] = useState([]);
