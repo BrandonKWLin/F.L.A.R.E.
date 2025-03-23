@@ -6,5 +6,5 @@ const nextConfig = {
       esmExternals: 'loose'
     }
   };
-  
-  export default nextConfig;
+
+export default nextConfig;
