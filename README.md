@@ -1,7 +1,12 @@
 # F.L.A.R.E.
 F.L.A.R.E. (Fire Location and AI Response Engine) uses NASA data and AI to broadcast wildfires like those in California—helping communities act early, save lives, and reduce healthcare burdens.
 
-[![YouTube Video](https://img.youtube.com/vi/EkiAaN3rWZY/0.jpg)](https://www.youtube.com/watch?v=EkiAaN3rWZY)
+## Introduction
+
+- 📽️ **Inspiration:** [Click here!](https://youtu.be/EkiAaN3rWZY)
+
+- 📽️ **Demo:** [Click here!](https://youtu.be/kV0KhqkaxAA&t)
+
 
 
 
