@@ -3,23 +3,32 @@
 </div>
 
 
-# F.L.A.R.E.
+# :fire: F.L.A.R.E.
 F.L.A.R.E. (Fire Location and AI Response Engine) uses NASA data and AI to broadcast wildfires like those in California—helping communities act early, save lives, and reduce healthcare burdens.
 
-## Introduction
+## :book: Introduction
 
-- 📽️ **Inspiration:** [Click here!](https://youtu.be/EkiAaN3rWZY)
+- :film_projector: **Inspiration:** [Click here!](https://youtu.be/EkiAaN3rWZY)
 
-- 📽️ **App Demo:** [Click here!](https://youtu.be/kV0KhqkaxAA&t)
+- :film_projector: **App Demo:** [Click here!](https://youtu.be/kV0KhqkaxAA&t)
 
-## Installation tip
-- Please use newest Node.js
 
-```sh
-nmv install 22
-npm install
+## :hammer_and_wrench: Deployment
+
+```bash
+# get code
+git clone https://github.com/BrandonKWLin/F.L.A.R.E..git
+
+# enter directory
+cd nextjs-natural-event-tracker-main
+
+# install dependencies
+nmv install 22          # install Node.js v22
+npm install             # install dependencies
+
+# run it
 npm run dev
 ```
 
-## Disclaimer:
+## :rotating_light: Disclaimer:
 You will need to add your Google Maps API key in the Map.js component and register for a NASA API key at https://api.nasa.gov. Additionally, this is also very buggy and W.I.P. At the moment.
